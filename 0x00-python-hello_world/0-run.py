@@ -1,2 +1,2 @@
-#!/usr/bin/python3
-compile "$PYFILE"
+#!/bin/python3
+python3 "$PYFILE"
