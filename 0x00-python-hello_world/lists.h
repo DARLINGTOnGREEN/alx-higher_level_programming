@@ -3,7 +3,6 @@
 
 #include <stdlib.h>
 
-#!/usr/bin/python3
 
 /**
  * struct listint_s - singly linked list
