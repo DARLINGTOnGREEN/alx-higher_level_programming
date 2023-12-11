@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-for x in range(100):
-    print("{:01}".format(x), end=', ')
+result = ', '.join("{:02}".format(i) for i in range(100))
+print(result)
