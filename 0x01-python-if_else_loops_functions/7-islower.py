@@ -5,9 +5,3 @@ def islower(c):
         return True
     else:
         return False
-
-# Test the function
-print(islower('a'))  # Output: True
-print(islower('B'))  # Output: False
-print(islower('5'))  # Output: False
-
