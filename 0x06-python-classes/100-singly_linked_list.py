@@ -43,7 +43,7 @@ class SinglyLinkedList:
 
     def __str__(self):
         """Return a string representation of the singly linked list"""
-        return = ""
+        result = ""
         current = self.head
         while current:
             result += str(current.data) + "\n"
