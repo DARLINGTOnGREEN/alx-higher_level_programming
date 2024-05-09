@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Module that defines a node of a singly linked list"""
 
 
 class Node:
@@ -30,7 +31,7 @@ class Node:
     def next_node(self, value):
         """setter for next_node"""
         if value is not None and not isinstance(value, Node):
-            raise TypeError("next_node must be a Node ogject")
+            raise TypeError("next_node must be a Node object")
         self.__next_node = value
 
 
