@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-"""define a class called magiC class"""
+"""define a class called magicClass"""
+
+
 class MagicClass:
+    """defines a MagicClass"""
     def __init__(self, radius=0):
         self._MagicClass__radius = 0
 
@@ -9,4 +12,3 @@ class MagicClass:
 
     def circumference(self):
         return 2 * 3.141592653589793 * self._MagicClass__radius
-
