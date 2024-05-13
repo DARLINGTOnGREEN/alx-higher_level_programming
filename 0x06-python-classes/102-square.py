@@ -1,4 +1,4 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 """define a class called square"""
 
 
@@ -64,4 +64,3 @@ class Square:
         if isinstance(other, Square):
             return self.area() <= other.area()
         return NotImplemented
-
