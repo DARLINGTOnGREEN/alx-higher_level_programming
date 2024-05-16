@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """function to add two integer or float"""
 
+
 def add_integer(a, b=98):
     """Adds two integer or floats together
     and returns the result
