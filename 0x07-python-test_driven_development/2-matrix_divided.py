@@ -3,6 +3,7 @@
 
 
 def matrix_divided(matrix, div):
+    """check if the matrix is a list of lists of integers and floats"""
     errorMessage = "matrix must be a matrix (list of lists) of integers/floats"
     if not matrix:
         raise TypeError(errorMessage)
