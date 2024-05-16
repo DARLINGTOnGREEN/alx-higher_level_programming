@@ -1,6 +1,4 @@
 #!/usr/bin/pyhton3
-"""function that add two interger for float"""
-
 
 def add_integer(a, b=98):
     """Adds two integer or floats together
