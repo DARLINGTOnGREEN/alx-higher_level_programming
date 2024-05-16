@@ -1,0 +1,49 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+
+>>> add_integer(0, 0)
+0
+>>> add_integer(12, 0)
+12
+>>> add_integer(0, 12)
+12
+>>> add_integer(3, 2)
+5
+>>> add_integer(-1, 1)
+0
+>>> add_integer(3, -3)
+0
+# Test cases with missing arguments
+>>> add_integer(2)
+100
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+# Test cases with non-numeric inputs
+>>> add_integer('a', 'b')
+Traceback (most recent call last):
+...
+TypeError: a and b must be integers or floats
+>>> add_integer('a', 42)
+Traceback (most recent call last):
+...
+TypeError: a and b must be integers or floats
+>>> add_integer('a')
+Traceback (most recent call last):
+...
+TypeError: a and b must be integers or floats
+>>> add_integer(42, 'b')
+Traceback (most recent call last):
+...
+TypeError: a and b must be integers or floats
+
+# Test cases with special float inputs
+>>> add_integer(float('inf'), 0)
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
+>>> add_integer(0, float('nan'))
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
