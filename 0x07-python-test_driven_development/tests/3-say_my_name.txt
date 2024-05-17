@@ -25,6 +25,7 @@ My name is Alex Hamilton
 
 >>> say_my_name("Alex")
 My name is Alex >>> say_my_name = __import__('3-say_my_name').say_my_name
+TypeError:say_my_name = __import__('3-say_my_name').say_my_name 
 
 >>> say_my_name()
 Traceback (most recent call last):
