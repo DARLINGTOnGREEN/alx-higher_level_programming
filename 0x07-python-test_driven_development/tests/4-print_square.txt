@@ -6,7 +6,7 @@ xxx
 xxx
 
 >>> print_square(1)
-x#
+x or #
 
 >>> print_square(2)
 xx
