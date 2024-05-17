@@ -12,3 +12,6 @@ def print_square(size):
 
     for index in range(size):
         print("x" * size)
+
+    for i in range(size):
+        print("#" * size)
