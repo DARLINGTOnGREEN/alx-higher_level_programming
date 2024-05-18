@@ -9,23 +9,11 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
-    for char in [".", ",", "?", ":"]:
+    for delimeter in "?:."
+        words = (delimeter + "\n\n").join(
+                [index.strip(" ") for index in words.split(delimeter)])
 
-        text = text.replace(char, f"{char}\n\n")
 
-
-    lines = text.split("\n")
-
-    for index, line in enumerate(lines):
-
-        if line:  # ignore empty lines
-
-            print(line.strip())
-
-            if index < len(lines) - 1:  # ignore the last line
-
-                print()
-
-if __name__ == "__main__":
+if __name__== "__main__":
     import doctest
     doctest.testfile("tests/5-text_indentation.txt")
