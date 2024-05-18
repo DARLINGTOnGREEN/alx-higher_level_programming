@@ -5,7 +5,6 @@
 def print_square(size):
     """print a Square using #"""
 
-
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
     if size < 0:
@@ -13,6 +12,7 @@ def print_square(size):
 
     for index in range(size):
         print("x" * size)
+
 
 if __name__ == "__main__":
     import doctest
