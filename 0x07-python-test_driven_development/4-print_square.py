@@ -12,3 +12,7 @@ def print_square(size):
 
     for index in range(size):
         print("x" * size)
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testfile("tests/4-print_square.txt")
