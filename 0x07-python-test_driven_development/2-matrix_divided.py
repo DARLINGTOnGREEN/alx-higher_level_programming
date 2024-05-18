@@ -5,18 +5,16 @@
 def matrix_divided(matrix, div):
     """Divides all elements of a matrix."""
 
+    errorMessage = "matrix must be a matrix (list of lists) of integers/floats"
     if not isinstance(matrix, list) or len(matrix) == 0 or not matrix[0]:
-        raise TypeError("matrix must be a matrix (list of lists) " \
-                        "of integers/floats")
+        raise TypeError(errorMessage)
 
     for row in matrix:
         if len(row) == 0:
-            raise TypeError("matrix must be a matrix (list of lists) " +
-                            "of integers/floats")
+            raise TypeError(errorMessage)
         for x in row:
             if type(x) is not int and type(x) is not float:
-                raise TypeError("matrix must be a matrix (list of lists) " +
-                                "of integers/floats")
+                raise TypeError(errorMessage)
 
     len_rows = []
     for row in matrix:
