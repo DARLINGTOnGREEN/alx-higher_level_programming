@@ -1,17 +1,15 @@
 #!/usr/bin/python3
-"""text indent"""
+"""module text indentation"""
 
 
 def text_indentation(text):
-    """text indent"""
-    if not isinstance(text, str):
+    """function to print text indentation"""
+
+    if type(text) is not str:
         raise TypeError("text must be a string")
 
-    for delimeter in "?:.":
-        words = (delimeter + "\n\n").join(
-                [index.strip(" ") for index in words.split(delimeter)])
+    for delim in ".:?":
+        text = (delim + "\n\n").join(
+            [line.strip(" ") for line in text.split(delim)])
 
-
-if __name__ == "__main__":
-    import doctest
-    doctest.testfile("tests/5-text_indentation.txt")
+    print("{}".format(text), end="")
