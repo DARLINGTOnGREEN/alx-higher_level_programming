@@ -1,4 +1,4 @@
-#!/usr/bin/python3i
+#!/usr/bin/python3
 """Module that defines a class"""
 
 
@@ -47,3 +47,16 @@ class Rectangle:
             return 0
         else:
             return 2 * (self.__width + self.__height)
+
+    def __str__(self):
+        if self.__width = 0 or self.__height = 0:
+            return ""
+        rectangle = ""
+        for i in range(self.__height):
+            for j in range(self.__width):
+                rectangle += "#"
+            rectangle += "\n"
+        return rectangle
+
+    def __rep__(self):
+        return f"Rectangle({self.__width}, {self.__height})"
