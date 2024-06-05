@@ -32,7 +32,8 @@ class Rectangle:
         """
         Return a string representation of the Rectangle instance.
         """
-        return "{}({}, {})".format(type(self).__name__, self.__width, self.__height)
+        return "{}({}, {})".format(
+                type(self).__name__, self.__width, self.__height)
 
     @property
     def width(self):
@@ -82,4 +83,4 @@ class Rectangle:
         """
         if self.__height == 0 or self.__width == 0:
             return 0
-        return 2 * (self.__height + self.__width)
+        return (self.__height * 2) + (self.__width * 2)
