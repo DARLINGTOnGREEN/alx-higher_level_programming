@@ -1,18 +1,8 @@
 #!/usr/bin/node
-//Write a script that prints 3 lines
+// Write a script that prints 3 lines
 
-const loop = [
-	{
-		text: 'C is fun'
-	},
-	{
-		text: 'Python is cool'
-	},
-	{
-		text: 'JavaScript is amazing'
-	}
-];
+const langs = ['C is fun', 'Python is cool', 'Javascript is amazing'];
 
-for(let x of loop) {
-	console.log(x.text);
+for (let i = 0; i < 3; i++) {
+  console.log(langs[i]);
 }
